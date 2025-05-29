@@ -2,14 +2,20 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+      int[] myIntArray = new int[10];
+        myIntArray[0] = 45;
+        myIntArray[1] = 1;
+        myIntArray[5] = 50;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        double[] myDoubleArray = new double[10];
+        myDoubleArray[2] = 3.5;
+
+        System.out.println(myDoubleArray[2]);
+
+        int[] firstTen = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println("first = " + firstTen[0]);
+
+        int arraylength = firstTen.length;
+        System.out.println("arraylength = " + arraylength);
     }
 }
